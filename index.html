@@ -16,12 +16,14 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 
+        <script defer src="./index.js"></script>
+
     <title>Document</title>
 </head>
 
 <body>
 
-    <div class="card container">
+    <div class="card container w-50">
         <h1 class="card-header d-flex justify-content-center">My Todo List</h1>
         <div class="card-body">
             <h5 class="card-title">Add your Todo list</h5>
@@ -29,18 +31,20 @@
         </div>
 
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Your Todo" aria-label="Recipient's username"
+            <input type="text" id="input" class="form-control" placeholder="Your Todo" aria-label="Recipient's username"
                 aria-describedby="button-addon2">
             <button class="btn btn-primary" type="button" id="button-addon2">Add</button>
         </div>
 
-        <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between">An item <i class="edit fa-regular fa-pen-to-square"></i><i class="trash fa-solid fa-trash-can"></i></li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A fourth item</li>
-            <li class="list-group-item">And a fifth one</li>
+        <ul class="list-group" id="list">
+            <!-- <li class="list-group-item d-flex justify-content-between">An item <i class="edit fa-regular fa-pen-to-square"></i><i class="trash fa-solid fa-trash-can"></i></li> -->
+            
         </ul>
+
+        <div class="d-grid gap-2 m-2">
+            <button class="btn btn-primary" type="button" id="deleteAll" onclick="removeAll()">Button</button>
+        
+          </div>
     </div>
 
 
@@ -51,7 +55,7 @@
 
 
 
-    <script src="./index.js"></script>
+    
 </body>
 
 </html>
